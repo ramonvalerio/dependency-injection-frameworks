@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection.Ninject", "DependencyInjection.Ninject\DependencyInjection.Ninject.csproj", "{FAC4DE44-B056-40DE-8F5A-D660D9D62CA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection.Presentation", "DependencyInjection.Presentation\DependencyInjection.Presentation.csproj", "{AAD35C20-AAC8-43A5-B4BD-4B9A9E497045}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection.Domain", "DependencyInjection.Domain\DependencyInjection.Domain.csproj", "{40F5777A-E21B-426E-B6E6-49912E268CAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection.Simple_Injector", "DependencyInjection.Simple_Injector\DependencyInjection.Simple_Injector.csproj", "{4DCC8C85-1CF3-4570-95DE-37EFE67A76F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection.UnityApplicationBlock", "DependencyInjection.UnityApplicationBlock\DependencyInjection.UnityApplicationBlock.csproj", "{A3F13C5C-A88E-4B22-A34F-9E868E81EBCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInjection.Structure_Map", "DependencyInjection.Structure_Map\DependencyInjection.Structure_Map.csproj", "{B79AC634-A72D-4DF8-9587-39BA7F5F1DCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAC4DE44-B056-40DE-8F5A-D660D9D62CA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC4DE44-B056-40DE-8F5A-D660D9D62CA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC4DE44-B056-40DE-8F5A-D660D9D62CA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC4DE44-B056-40DE-8F5A-D660D9D62CA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAD35C20-AAC8-43A5-B4BD-4B9A9E497045}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAD35C20-AAC8-43A5-B4BD-4B9A9E497045}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAD35C20-AAC8-43A5-B4BD-4B9A9E497045}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAD35C20-AAC8-43A5-B4BD-4B9A9E497045}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40F5777A-E21B-426E-B6E6-49912E268CAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40F5777A-E21B-426E-B6E6-49912E268CAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40F5777A-E21B-426E-B6E6-49912E268CAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40F5777A-E21B-426E-B6E6-49912E268CAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCC8C85-1CF3-4570-95DE-37EFE67A76F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCC8C85-1CF3-4570-95DE-37EFE67A76F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCC8C85-1CF3-4570-95DE-37EFE67A76F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCC8C85-1CF3-4570-95DE-37EFE67A76F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F13C5C-A88E-4B22-A34F-9E868E81EBCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F13C5C-A88E-4B22-A34F-9E868E81EBCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F13C5C-A88E-4B22-A34F-9E868E81EBCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F13C5C-A88E-4B22-A34F-9E868E81EBCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79AC634-A72D-4DF8-9587-39BA7F5F1DCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79AC634-A72D-4DF8-9587-39BA7F5F1DCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79AC634-A72D-4DF8-9587-39BA7F5F1DCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79AC634-A72D-4DF8-9587-39BA7F5F1DCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\Unity.2.1.505.2\lib\NET35
+	EndGlobalSection
+EndGlobal

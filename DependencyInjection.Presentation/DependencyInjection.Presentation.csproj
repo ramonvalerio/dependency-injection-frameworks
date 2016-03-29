@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AAD35C20-AAC8-43A5-B4BD-4B9A9E497045}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DependencyInjection.Presentation</RootNamespace>
+    <AssemblyName>DependencyInjection.Presentation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factory\KernelFactory.cs" />
+    <Compile Include="Factory\TipoKernel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DependencyInjection.Domain\DependencyInjection.Domain.csproj">
+      <Project>{40f5777a-e21b-426e-b6e6-49912e268cac}</Project>
+      <Name>DependencyInjection.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DependencyInjection.Ninject\DependencyInjection.Ninject.csproj">
+      <Project>{fac4de44-b056-40de-8f5a-d660d9d62ca1}</Project>
+      <Name>DependencyInjection.Ninject</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DependencyInjection.Simple_Injector\DependencyInjection.Simple_Injector.csproj">
+      <Project>{4dcc8c85-1cf3-4570-95de-37efe67a76f1}</Project>
+      <Name>DependencyInjection.Simple_Injector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DependencyInjection.Structure_Map\DependencyInjection.Structure_Map.csproj">
+      <Project>{b79ac634-a72d-4df8-9587-39ba7f5f1dce}</Project>
+      <Name>DependencyInjection.Structure_Map</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DependencyInjection.UnityApplicationBlock\DependencyInjection.UnityApplicationBlock.csproj">
+      <Project>{a3f13c5c-a88e-4b22-a34f-9e868e81ebcf}</Project>
+      <Name>DependencyInjection.UnityApplicationBlock</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
